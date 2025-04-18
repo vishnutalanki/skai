@@ -1,7 +1,6 @@
 import streamlit as st
 import tempfile
 from ai_engine import generatePlan
-
 from PyPDF2 import PdfReader
 from docx import Document
 
