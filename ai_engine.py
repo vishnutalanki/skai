@@ -1,3 +1,22 @@
+# Debug logging for package versions
+try:
+    import openai
+    print("openai version:", openai.__version__)
+except Exception as e:
+    print("Error importing openai:", e)
+
+try:
+    import langchain
+    print("langchain version:", langchain.__version__)
+except Exception as e:
+    print("Error importing langchain:", e)
+
+try:
+    import langchain_openai
+    print("langchain_openai version:", langchain_openai.__version__)
+except Exception as e:
+    print("Error importing langchain_openai:", e)
+
 from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.prompts import ChatPromptTemplate
