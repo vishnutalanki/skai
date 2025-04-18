@@ -1,22 +1,3 @@
-# Debug logging for package versions
-try:
-    import openai
-    print("openai version:", openai.__version__)
-except Exception as e:
-    print("Error importing openai:", e)
-
-try:
-    import langchain
-    print("langchain version:", langchain.__version__)
-except Exception as e:
-    print("Error importing langchain:", e)
-
-try:
-    import langchain_openai
-    print("langchain_openai version:", langchain_openai.__version__)
-except Exception as e:
-    print("Error importing langchain_openai:", e)
-
 from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.prompts import ChatPromptTemplate
@@ -60,11 +41,3 @@ def generatePlan(combined_input: str, theme: str, desired_standard: str, tone: s
     )
     response = llm(prompt.format_messages(combined_input=combined_input, theme=theme, desired_standard=desired_standard, tone=tone))
     return response.content
-
-
-# Graph-based AI processing using LangGraph
-
-# class skaiGraph(StateGraph):
-#     def __init__(self):
-#         super().__init__()
-#         self.add_node("generate_plan", generatePlan, END)
