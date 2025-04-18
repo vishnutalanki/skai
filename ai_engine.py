@@ -45,7 +45,7 @@ def generatePlan(combined_input: str, theme: str, desired_standard: str, tone: s
 
 # Graph-based AI processing using LangGraph
 
-class skaiGraph(StateGraph):
-    def __init__(self):
-        super().__init__()
-        self.add_node("generate_plan", generatePlan, END)
+# class skaiGraph(StateGraph):
+#     def __init__(self):
+#         super().__init__()
+#         self.add_node("generate_plan", generatePlan, END)
