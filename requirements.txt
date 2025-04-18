@@ -2,7 +2,7 @@ python-dotenv
 PyPDF2
 python-docx
 streamlit==1.32.2
-langchain-openai==0.1.25
+langchain-openai
 openai==1.68.2
-langchain==0.3.23
+langchain
 
